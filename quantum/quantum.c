@@ -77,6 +77,10 @@
 #    include "vial.h"
 #endif
 
+#ifdef LAYER_LOCK_ENABLE
+#    include "process_layer_lock.h"
+#endif // LAYER_LOCK_ENABLE
+
 #ifdef AUDIO_ENABLE
 #    ifndef GOODBYE_SONG
 #        define GOODBYE_SONG SONG(GOODBYE_SOUND)
@@ -403,6 +407,12 @@ bool process_record_quantum_helper(uint16_t keycode, keyrecord_t *record) {
 #endif
 #ifdef TRI_LAYER_ENABLE
             process_tri_layer(keycode, record) &&
+#endif
+#ifdef LAYER_LOCK_ENABLE
+            process_layer_lock(keycode, record) &&
+#endif
+#ifdef BLUETOOTH_ENABLE
+            process_connection(keycode, record) &&
 #endif
             true)) {
         return false;
