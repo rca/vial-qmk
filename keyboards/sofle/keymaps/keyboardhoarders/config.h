@@ -20,8 +20,17 @@
 
 #pragma once
 
+#ifdef OLED_ENABLE
+#   define OLED_FONT_H "keyboards/splitkb/aurora/sofle_v2/glcdfont.c"
+#endif
+
 // Vial Support
 #define VIAL_KEYBOARD_UID { 0x05, 0xCD, 0x9F, 0x8A, 0xF4, 0xDF, 0xDE, 0xB2 }
+
+// Adding buffer for computer reboot.  You wont be able to get into bios with this delay.  remove if youd rather unplug/replug keyboard on reboot.
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
+
 
 // The four corners
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 5, 3, 8 }
@@ -70,6 +79,5 @@
 #define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_HUE
 #define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT
 #define ENABLE_RGB_MATRIX_RIVERFLOW
-
 
 #endif
