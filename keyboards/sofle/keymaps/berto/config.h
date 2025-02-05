@@ -80,4 +80,19 @@
 #define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT
 #define ENABLE_RGB_MATRIX_RIVERFLOW
 
+/**
+ * define EE_HANDS in order to be able to plug the right half of the keyboard to the computer.
+ * otherwise that half thinks it's the left side and the entire keyboard is a mirror image of
+ * what it should be.
+ *
+ * in order to use this, each half of the firmware needs to be compile specifically for the
+ * right or left halves:
+ *
+ * ```
+ * qmk flash -kb sofle/rev1 -km berto -e CONVERT_TO=promicro_rp2040 -bl uf2-split-left
+ * qmk flash -kb sofle/rev1 -km berto -e CONVERT_TO=promicro_rp2040 -bl uf2-split-right
+ * ```
+ */
+#define EE_HANDS
+
 #endif
