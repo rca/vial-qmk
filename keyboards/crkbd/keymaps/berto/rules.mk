@@ -9,5 +9,6 @@ OLED_ENABLE         = no
 OLED_DRIVER         = SSD1306
 EXTRAKEY_ENABLE     = no
 COMBO_ENABLE        = yes
+LAYER_LOCK_ENABLE   = yes
 
 QMK_SETTINGS        = no
