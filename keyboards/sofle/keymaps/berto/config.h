@@ -31,6 +31,7 @@
 #define SPLIT_USB_DETECT
 #define SPLIT_USB_TIMEOUT 2000
 
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
 // The four corners
 //#define VIAL_UNLOCK_COMBO_ROWS { 0, 5, 3, 8 }
