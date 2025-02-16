@@ -33,8 +33,12 @@
 
 
 // The four corners
-#define VIAL_UNLOCK_COMBO_ROWS { 0, 5, 3, 8 }
-#define VIAL_UNLOCK_COMBO_COLS { 0, 0, 0, 0 }
+//#define VIAL_UNLOCK_COMBO_ROWS { 0, 5, 3, 8 }
+//#define VIAL_UNLOCK_COMBO_COLS { 0, 0, 0, 0 }
+
+// The first two keys on the top left
+#define VIAL_UNLOCK_COMBO_ROWS {0, 0}
+#define VIAL_UNLOCK_COMBO_COLS {0, 1}
 
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_LED_COUNT 72
