@@ -32,8 +32,13 @@ enum {
 #define KC_L2_ENT            LT(2, KC_ENT)
 #define KC_CAPS_WORD         0x7c73
 #define KC_LAYER_LOCK        0x7c7b
-#define KC_TD_ESC_CAPS_WORD  TD(TD_ESC_CAPS_WORD)
-#define KC_TD_TAB_LAYER_LOCK TD(TD_TAB_LAYER_LOCK)
+
+// these are supposed to point to tapdance, but since using VIAL here, there is no way to setup tapdance
+// in code without losing the ability to edit in the GUI
+//#define KC_TD_ESC_CAPS_WORD  TD(TD_ESC_CAPS_WORD)
+//#define KC_TD_TAB_LAYER_LOCK TD(TD_TAB_LAYER_LOCK)
+#define KC_TD_ESC_CAPS_WORD  KC_ESC
+#define KC_TD_TAB_LAYER_LOCK KC_TAB
 
 
 // Tap Dance definitions
