@@ -24,6 +24,8 @@
 #   define OLED_FONT_H "keyboards/splitkb/aurora/sofle_v2/glcdfont.c"
 #endif
 
+#define TAPPING_TERM 150
+
 // Vial Support
 #define VIAL_KEYBOARD_UID { 0x05, 0xCD, 0x9F, 0x8A, 0xF4, 0xDF, 0xDE, 0xB2 }
 
