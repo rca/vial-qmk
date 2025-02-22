@@ -24,7 +24,12 @@
 #   define OLED_FONT_H "keyboards/splitkb/aurora/sofle_v2/glcdfont.c"
 #endif
 
-#define TAPPING_TERM 150
+#define TAPPING_TERM 135
+
+// trying out home row mods and need to setup permissive hold so that key presses
+// don't assume i'm holding down the modifier key when typing fast
+// https://docs.qmk.fm/tap_hold
+#define PERMISSIVE_HOLD
 
 // Vial Support
 #define VIAL_KEYBOARD_UID { 0x05, 0xCD, 0x9F, 0x8A, 0xF4, 0xDF, 0xDE, 0xB2 }
