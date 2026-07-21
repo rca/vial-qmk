@@ -25,6 +25,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 #define TAPPING_TERM 130
 
+// From QMK docs on Home Row Mods:
+// https://docs.qmk.fm/tap_hold#configuring-home-row-mods
+#define PERMISSIVE_HOLD  // Triggers mod if you tap another key while holding.
+//#define CHORDAL_HOLD     // Constrains holds to opposite-hand combinations.
+// Consider also:
+#define FLOW_TAP_TERM 150 // Disables holds when typing quickly.
+
 //#define USE_MATRIX_I2C
 #ifdef KEYBOARD_crkbd_rev1_legacy
 #    undef USE_I2C
