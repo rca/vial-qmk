@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VIAL_UNLOCK_COMBO_COLS {0, 1}
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
-#define TAPPING_TERM 130
+#define TAPPING_TERM 170
 
 // From QMK docs on Home Row Mods:
 // https://docs.qmk.fm/tap_hold#configuring-home-row-mods
